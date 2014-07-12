@@ -32,6 +32,7 @@ Package.on_use(function (api) {
     ], 'server');
   } else {
     api.add_files([
+      '.npm/package/node_modules/meteor-stubs/index.js',
       'server/server.js',
       'common/reporter.js',
       'server/boot.js',
