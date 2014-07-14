@@ -9,11 +9,12 @@ Package.describe({
 
 Npm.depends({
   'jasmine-core': '2.0.0',
-  'meteor-stubs': '0.0.2'
+  'meteor-stubs': '0.0.2',
+  'lodash': '2.4.1'
 });
 
 Package.on_use(function (api) {
-  api.use(['velocity'], 'server');
+  api.use(['velocity', 'package-stubber'], 'server');
   api.use(['templating'], 'client');
 
   api.add_files(['server/main.js'], 'server');
